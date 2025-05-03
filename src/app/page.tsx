@@ -5,7 +5,8 @@ export default async function Home() {
   const data = await res.json()
 
   return (
-    <div>
+    <div className="bg-background">
+      <h1 className="text-4xl text-home-title">Filmes</h1>
       {data.map((movie: any) => (
         <div key={movie.id}>
           <h1>{movie.title}</h1>
