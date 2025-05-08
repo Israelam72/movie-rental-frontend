@@ -21,8 +21,8 @@ export default async function Home() {
 
   return (
     <div id="home" className="flex flex-col items-center min-h-screen bg-background text-foreground">
-      <section id="hero" className="relative py-20 md:py-32 overflow-hidden">
-        <div className="container relative z-10">
+      <section id="hero" className="relative py-20 md:py-32 overflow-hidden w-full">
+        <div className="container mx-auto relative z-10">
           <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Unlimited Movies,
@@ -45,8 +45,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section id="feature" className="relative  bg-backgroundSecondary py-20 md:py-32 overflow-hidden">
-        <div className="container relative z-10">
+      <section id="feature" className="relative bg-backgroundSecondary py-20 md:py-32 overflow-hidden w-full">
+        <div className="container mx-auto relative z-10">
           <div className="flex flex-col items-center text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">
                 Featured Movies
