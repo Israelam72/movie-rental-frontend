@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Rent a Movie",
   description: "Rent a Movie",
+  icons: {
+    icon: '/favicon.svg',
+  },  
 };
 
 export default function RootLayout({
