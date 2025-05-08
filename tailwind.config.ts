@@ -12,7 +12,11 @@ const config: Config = {
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
+				backgroundSecondary: 'hsl(var(--background-secondary))',
   			foreground: 'hsl(var(--foreground))',
+				text: {
+					gray: 'hsl(var(--text-gray))'
+				},
   			home: {
   				bg: 'var(--home-background)',
   				title: 'var(--home-title-color)',
