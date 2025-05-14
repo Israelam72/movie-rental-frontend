@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/layout/header";
 import { ThemeProvider } from "@/components/theme-provider";
-
+import Footer from "@/components/layout/footer";
 const inter = Inter({
   subsets: ["latin"],
   display: 'swap',
@@ -28,6 +28,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -15,8 +15,8 @@ export default function Header() {
         </div>
         <div className="hidden md:flex items-center gap-8">
           <Button className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 font-bold p-0">Movies</Button>
+          <Link href="#feature" className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 text-sm font-bold p-0">Features</Link>
           <Link href="#pricing" className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 text-sm font-bold p-0">Pricing</Link>
-          <Link href="#about" className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 text-sm font-bold p-0">About</Link>
           <Link href="#contact" className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 text-sm font-bold p-0">Contact</Link>
         </div>
         <div className="flex items-center gap-2">
