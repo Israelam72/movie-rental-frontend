@@ -31,7 +31,7 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="bg-transparent border-2 border-teal-md text-teal-md rounded-none hover:bg-teal-darkest hover:text-foreground transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100"><Play className="mr-2 h-4 w-4" />Watch Trailer</Button>
+            className="bg-transparent border-2 border-teal-md text-teal-md rounded-none hover:bg-teal-darkest hover:text-foreground transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100">Learn More</Button>
         </div>
       </div>
     </section>
