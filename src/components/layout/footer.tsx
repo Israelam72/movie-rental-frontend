@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, Instagram, Linkedin  } from "lucide-react"
+import { BriefcaseBusiness, Github, Instagram, Linkedin, Mail  } from "lucide-react"
 import { Clapperboard } from "lucide-react"
 import Link from "next/link"
 
@@ -24,6 +24,14 @@ const Footer = () => {
                 <Link href="https://www.linkedin.com/in/israel-am/" className="text-gray-400 hover:text-pink-light transition-colors">
                   <Linkedin className="size-7" />
                   <span className="sr-only">Linkedin</span>
+                </Link>
+                <Link href="https://github.com/Israelam72" className="text-gray-400 hover:text-pink-light transition-colors">
+                  <Github className="size-7" />
+                  <span className="sr-only">Github</span>
+                </Link>
+                <Link href="mailto:israelarantes.m@gmail.com" className="text-gray-400 hover:text-pink-light transition-colors">
+                  <Mail className="size-7" />
+                  <span className="sr-only">Gmail</span>
                 </Link>
                 <Link href="#" className="text-gray-400 hover:text-pink-light transition-colors">
                   <BriefcaseBusiness className="size-7" />
