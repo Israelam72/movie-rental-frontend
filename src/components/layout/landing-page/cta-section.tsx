@@ -16,22 +16,33 @@ const CTA = () => {
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col container relative items-center text-center mb-16 z-10">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Ready to Rent or Stream?
+            Hi, I'm Israel!
           </h2>
           <div className="w-24 h-1 bg-pink-md my-4"></div>
           <p className="text-text-gray max-w-2xl mx-auto">
-            Join thousands of movie lovers who trust RENTAMOVIE for their entertainment needs. Start your free 7-day trial today.
+            I’m a software developer with a passion for technology, cinema, and crafting exceptional digital experiences.
+            This project is part of my portfolio.
           </p>
           <div className="flex items-center justify-center gap-4 p-10">
-            <Button className="bg-pink-md px-10 py-4 text-background rounded-none hover:bg-pink-dark transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100">
-              Start Free Trial
+            <Button 
+              className="bg-pink-md text-background rounded-none hover:bg-pink-dark transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100"
+              asChild
+            >
+              <a href="https://www.linkedin.com/in/israel-am/" target="_blank" rel="noopener noreferrer">
+                My LinkedIn
+              </a>
             </Button>
-            <Button className="bg-transparent px-10 py-4 border-2 border-teal-md text-teal-md rounded-none hover:bg-teal-darkest hover:text-foreground transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100">
-              Learn More
+            <Button 
+              className="bg-transparent border-2 border-teal-md text-teal-md rounded-none hover:bg-teal-darkest hover:text-foreground transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100"
+              asChild
+            >
+              <a href="mailto:israelarantes.m@gmail.com">
+                Contact me
+              </a>
             </Button>
           </div>
           <p className="text-text-gray max-w-2xl">
-            Cancel anytime. No commitment.
+            Feel free to explore my projects!
           </p>
         </div>
       </div>
