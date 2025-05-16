@@ -17,6 +17,13 @@ const PricingSection = async () => {
 
   return (
     <section id="pricing" className="relative bg-background py-20 md:py-32 overflow-hidden w-full">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="absolute top-20 right-20 w-40 h-40 border-4 border-pink-500/10 rounded-full"></div>
+            <div className="absolute bottom-40 left-40 w-60 h-20 bg-teal-500/5 transform -rotate-12"></div>
+            <div className="absolute top-1/3 left-1/4 w-20 h-20 bg-pink-500/10 transform rotate-45"></div>
+          </div>
+        </div>
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -31,7 +38,7 @@ const PricingSection = async () => {
           {data.map((plan: Plan, key: number) => (
             <Card key={key} className={`flex flex-col h-full border-[1px] bg-backgroundSecondary rounded-none ${plan.id === 2 ? "border-pink-md" : "border-teal-md"} relative overflow-hidden`}>
               {plan.id === 2 && (
-                <div className="absolute top-0 right-0 translate-x-[-100%] mx-auto px-3 w-fit bg-pink-md text-white px-2 py-1 text-sm font-medium">
+                <div className="absolute top-0 right-0 translate-x-[-100%] mx-auto px-3 w-fit bg-pink-md text-white px-2 py-1 text-sm font-medium transform -skew-x-6">
                   Most Popular
                 </div>
               )}

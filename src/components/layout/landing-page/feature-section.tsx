@@ -20,6 +20,12 @@ const FeatureSection = async () => {
 
   return (
     <section id="feature" className="relative bg-backgroundSecondary py-20 md:py-32 overflow-hidden w-full">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 right-0 w-32 h-full bg-pink-500/5"></div>
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-teal-500/5"></div>
+          <div className="absolute top-20 left-20 w-20 h-20 rounded-full border-4 border-pink-500/10"></div>
+          <div className="absolute bottom-40 right-40 w-16 h-16 transform rotate-45 border-4 border-teal-500/10"></div>
+        </div>
         <div className="container mx-auto relative z-10">
           <div className="flex flex-col items-center text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold">
