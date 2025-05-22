@@ -12,6 +12,7 @@ interface Movie {
   releaseYear: number
   synopsis: string
   rating: number
+  image_url: string
 }
 
 const FeatureSection = async () => {
@@ -42,7 +43,7 @@ const FeatureSection = async () => {
                 <div className="relative aspect-[2/3] w-full overflow-hidden">
                   <div className="absolute inset-0 border-b-2 border-pink-500/30 z-10"></div>
                   <Image
-                    src={"/placeholder.svg"}
+                    src={movie.image_url}
                     alt={movie.title}
                     fill
                     className="object-cover transition-transform group-hover:scale-105 filter saturate-50"
