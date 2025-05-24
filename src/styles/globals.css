@@ -23,7 +23,7 @@
 
     /* Home - Dark Mode */
     --home-background: #1a1a1a;
-    --home-title-color: #60a5fa;
+    --home-title-color: #ec4899;
     --home-text-color: #e5e7eb;
 
     /* Top Bar Menu - Dark Mode */
@@ -31,6 +31,13 @@
     --top-bar-text: #f1f5f9;
     --top-bar-hover: #1e293b;
     --top-bar-active: #38bdf8;
+
+    /* Sign In Page - Dark Mode */
+    --sign-in-background: #1a1a1a;
+    --sign-in-title-color: #ec4899;
+    --sign-in-text-color: #e5e7eb;
+
+    
   }
 }
 

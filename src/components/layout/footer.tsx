@@ -1,23 +1,18 @@
 import { BriefcaseBusiness, Github, Instagram, Linkedin, Mail  } from "lucide-react"
 import { Clapperboard } from "lucide-react"
 import Link from "next/link"
+import { FooterDecorators } from "../decorators/signInDecorators"
+import Logo from "../logo/logo"
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-background py-12 relative border-t-2 border-pink-light/30">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-pink-light/50 via-teal-500/50 to-pink-light/50"></div>
-          <div className="absolute top-10 right-10 w-20 h-20 border-4 border-pink-light/10 transform rotate-45"></div>
-        </div>
+      <FooterDecorators />  
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
               <Link href="/" className="flex items-center gap-2 mb-4">
-                <div className="relative w-8 h-8 flex items-center justify-center">
-                  <Clapperboard className="h-6 w-6 text-pink-light" />
-                  <div className="absolute inset-0 border-2 border-pink-light rounded-md transform rotate-6"></div>
-                </div>
-                <span className="text-xl font-bold tracking-wider">RENTAMOVIE</span>
+                <Logo />
               </Link>
               <p className="text-gray-400 text-sm mb-4">My name is <span className="font-bold text-pink-light">Israel A M</span>, I'm a software developer and this is my portfolio website. <br /> <span className="font-bold">Links to my social media are below.</span></p>
               <div className="flex space-x-4">

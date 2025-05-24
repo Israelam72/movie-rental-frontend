@@ -4,6 +4,7 @@ import { Clapperboard } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";  
+import Logo from "../logo/logo";
 
 export default function Header() {
   const router = useRouter()
@@ -14,11 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b-2 border-b-pink-md/30 w-full backdrop-blur-md">
       <div className="flex h-16 mx-10 items-center justify-between gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <div className="relative w-8 h-8 flex items-center justify-center">
-              <Clapperboard className="text-pink-md border-pink-light" />
-              <div className="absolute inset-0 border-2 border-pink-md rounded-md transform -rotate-12"></div>
-            </div>
-            <h1 className="text-xl font-bold">RENTAMOVIE</h1>
+            <Logo />
           </Link>
         {!isAuthPage && (
         <>

@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative py-20 md:py-32 overflow-hidden w-full">
           <div className="absolute inset-0 z-0">
-            <div className="absolute top-0 left-0 w-full h-full bg-gray-950">
+            <div className="absolute top-0 left-0 w-full h-full bg-background">
             <div className="absolute top-10 left-1/4 w-32 h-32 border-4 border-pink-500/20 transform rotate-45"></div>
             <div className="absolute bottom-20 right-1/4 w-40 h-40 border-4 border-teal-500/20 rounded-full"></div>
             <div className="absolute top-1/3 right-10 w-24 h-24 bg-pink-500/10 transform rotate-12"></div>
