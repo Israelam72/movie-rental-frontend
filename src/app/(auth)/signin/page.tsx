@@ -11,16 +11,13 @@ const SignIn = () => {
             <div className="bg-backgroundSecondary border-2 border-pink-light p-8 relative">
               <CardDetails />
               <div className="mb-8 text-center">
-                <h1 className="text-2xl font-bold tracking-wider mb-2">Reset Password</h1>
+                <h1 className="text-2xl font-bold tracking-wider mb-2">Sign In</h1>
                 <TextDetails />
-                <p className="text-gray-400">Enter your email to receive a password reset link</p>
+                <p className="text-gray-400">Welcome back to RENTAMOVIE</p>
               </div>
-
             </div>
-
           </div>
         </div>
-        
       </main>
     </div>
   )

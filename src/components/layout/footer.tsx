@@ -1,5 +1,4 @@
 import { BriefcaseBusiness, Github, Instagram, Linkedin, Mail  } from "lucide-react"
-import { Clapperboard } from "lucide-react"
 import Link from "next/link"
 import { FooterDecorators } from "../decorators/signInDecorators"
 import Logo from "../logo/logo"
