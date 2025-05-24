@@ -14,9 +14,9 @@ const HeroSection = () => {
         <div className="container mx-auto relative z-10">
         <div className="flex flex-col items-center text-center space-y-6 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Unlimited Movies,
+            Old Classics on Old Media. 
             <span className="text-pink-md"> Anytime</span>
-            , Anywhere
+            , Anywhere.
           </h1>
           <div className="w-24 h-2 bg-pink-md my-4"></div>
           <p className="text-lg md:text-xl text-home-text">
