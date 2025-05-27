@@ -36,10 +36,10 @@ const CardDetails = () => {
   )
 }
 
-const TextDetails = () => {
+const TextDetails = ({ type }: { type: string }) => {
   return (
     <>
-      <div className="w-16 h-1 bg-teal-500 mx-auto mb-4"></div>
+      <div className={`w-16 h-1 ${type === "teal" ? "bg-teal-500" : "bg-pink-500"} mx-auto mb-4`} />
     </>
   )
 }
