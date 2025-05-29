@@ -10,8 +10,8 @@ const SignIn = () => {
         <div className="w-full max-w-md">
           <div className="relative">
             <SignInDecorators />
-            <div className="bg-backgroundSecondary border-2 border-pink-light p-8 relative w-[450px] h-[500px]">
-              <CardDetails />
+            <div className="bg-backgroundSecondary border-2 border-pink-light p-8 relative w-[450px]">
+              <CardDetails type="pink" />
               <div className="mb-6 text-center">
                 <h1 className="text-2xl font-bold tracking-wider mb-2">Sign In</h1>
                 <TextDetails type="pink" />

@@ -28,10 +28,10 @@ const SignInDecorators = () => {
   )
 }
 
-const CardDetails = () => {
+const CardDetails = ({ type }: { type: string }) => {
   return (
     <>
-      <div className="absolute top-0 left-0 w-2 h-full bg-pink-light"></div>
+      <div className={`absolute top-0 left-0 w-2 h-full ${type === "teal" ? "bg-teal-light" : "bg-pink-light"}`}></div>
     </>
   )
 }
