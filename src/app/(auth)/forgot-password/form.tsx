@@ -11,7 +11,10 @@ import { forgotPasswordSchema } from "./schema";
 
 const ForgotPasswordForm = () => {
   const form = useForm<z.infer<typeof forgotPasswordSchema>>({
-    resolver: zodResolver(forgotPasswordSchema)
+    resolver: zodResolver(forgotPasswordSchema),
+    defaultValues: {
+      email: "",
+    }
   })
 
   const onSubmit = (data: z.infer<typeof forgotPasswordSchema>) => {

@@ -26,13 +26,15 @@ export default function Header() {
             <Link href="#contact" className="bg-transparent hover:bg-transparent text-foreground hover:text-pink-light transition-colors duration-300 text-sm font-bold p-0">Contact</Link>
           </div>
           <div className="flex items-center gap-2">
-            <Button className="bg-transparent text-foreground hover:bg-transparent hover:text-pink-light transition-colors duration-300 font-bold"
-            onClick={() => {
-              router.push("/signin")
-            }}
+            <Button 
+              className="bg-transparent text-foreground hover:bg-transparent hover:text-pink-light transition-colors duration-300 font-bold"
+              onClick={() => router.push("/signin")}
             >Sign In
             </Button>
-            <Button className="bg-pink-md text-background rounded-none hover:bg-pink-dark transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100">Get Started</Button>
+            <Button 
+              className="bg-pink-md text-background rounded-none hover:bg-pink-dark transform -skew-x-6 transition-colors duration-300 hover:translate-x-[-1px] hover:translate-y-[1px] active:translate-x-[-4px] active:translate-y-[4px] transition-transform duration-100"
+              onClick={() => router.push("/signup")}
+            >Get Started</Button>
           </div>
         </>
         )}

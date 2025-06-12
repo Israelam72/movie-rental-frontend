@@ -13,7 +13,12 @@ import { z } from "zod";
 
 const SignInForm = () => {
   const form = useForm<z.infer<typeof signInSchema>>({
-    resolver: zodResolver(signInSchema)
+    resolver: zodResolver(signInSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+      rememberMe: false,
+    }
   })
 
   const onSubmit = (data: z.infer<typeof signInSchema>) => {

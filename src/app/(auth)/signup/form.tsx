@@ -4,7 +4,6 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import Link from "next/link";
 import { z } from "zod";
 import { signUpSchema } from "./schema";
 import { useForm } from "react-hook-form";
@@ -12,7 +11,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 const SignUpForm = () => {
   const form = useForm<z.infer<typeof signUpSchema>>({
-    resolver: zodResolver(signUpSchema)
+    resolver: zodResolver(signUpSchema),
+    defaultValues: {
+      username: "",
+      email: "",
+      password: "",
+      confirmPassword: "",
+    }
   });
 
   const onSubmit = (data: z.infer<typeof signUpSchema>) => {
@@ -25,10 +30,10 @@ const SignUpForm = () => {
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
           <FormField
             control={form.control}
-            name="name"
+            name="username"
             render={({ field }) => (
               <FormItem className="space-y-2">
-                <FormLabel htmlFor="name" className="text-sm font-medium tracking-wide text-gray-300">Your Name</FormLabel>
+                <FormLabel htmlFor="username" className="text-sm font-medium tracking-wide text-gray-300">Your Username</FormLabel>
                 <FormControl>
                   <Input id="name" type="text" placeholder="Enter your name" {...field} className="bg-gray-800 border-2 border-gray-700 focus:border-teal-light focus-visible:ring-0 rounded-none h-11 text-white" />
                 </FormControl>
